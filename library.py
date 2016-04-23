@@ -34,8 +34,8 @@ driver.save_screenshot(screenshot_name + '.png')
 
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
-with open('soup.txt', 'w') as file:
-    file.write(html.encode('utf-8'))
+# with open('soup.txt', 'w') as file:
+#     file.write(html.encode('utf-8'))
 
 user_detail_soup = soup.find('table', id='AutoNumber1')
 if user_detail_soup:
